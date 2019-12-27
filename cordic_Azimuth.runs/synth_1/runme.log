@@ -1,0 +1,435 @@
+
+*** Running vivado
+    with args -log Top_module.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_module.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_module.tcl -notrace
+Command: synth_design -top Top_module -part xc7a200tfbg484-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 18416 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 471.129 ; gain = 101.969
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Top_module' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Top_module.vhd:21]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/clk_wiz_0_stub.vhdl:5' bound to instance 'clk_0' of component 'clk_wiz_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Top_module.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/clk_wiz_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'Azimuth' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:6' bound to instance 'azimuth_0' of component 'Azimuth' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Top_module.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'Azimuth' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:20]
+INFO: [Synth 8-3491] module 'cordic_0' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/cordic_0_stub.vhdl:5' bound to instance 'sin_cos' of component 'cordic_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'cordic_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/cordic_0_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'div_gen_0' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/div_gen_0_stub.vhdl:5' bound to instance 'div' of component 'div_gen_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'div_gen_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/div_gen_0_stub.vhdl:18]
+INFO: [Synth 8-3491] module 'cordic_1' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/cordic_1_stub.vhdl:5' bound to instance 'ArcTan' of component 'cordic_1' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'cordic_1' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/cordic_1_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'cordic_sqrt' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/cordic_sqrt_stub.vhdl:5' bound to instance 'sqrt' of component 'cordic_sqrt' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:182]
+INFO: [Synth 8-638] synthesizing module 'cordic_sqrt' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/cordic_sqrt_stub.vhdl:16]
+INFO: [Synth 8-3491] module 'mult_gen_0' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/mult_gen_0_stub.vhdl:5' bound to instance 'mult_10bit' of component 'mult_gen_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_0' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/mult_gen_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'mult_gen_1' declared at 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/mult_gen_1_stub.vhdl:5' bound to instance 'mult_2_bir' of component 'mult_gen_1' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:201]
+INFO: [Synth 8-638] synthesizing module 'mult_gen_1' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/.Xil/Vivado-14820-Reza/realtime/mult_gen_1_stub.vhdl:15]
+WARNING: [Synth 8-614] signal 'LOCKED' is read in the process but is not in the sensitivity list [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:218]
+WARNING: [Synth 8-6014] Unused sequential element atan_out_reg was removed.  [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:336]
+WARNING: [Synth 8-6014] Unused sequential element cos_Lcos_G_2_reg was removed.  [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:342]
+INFO: [Synth 8-256] done synthesizing module 'Azimuth' (1#1) [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'Top_module' (2#1) [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Top_module.vhd:21]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 528.066 ; gain = 158.906
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 528.066 ; gain = 158.906
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 528.066 ; gain = 158.906
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg484-2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_0'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_0'
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'azimuth_0/sin_cos'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/cordic_0/cordic_0/cordic_0_in_context.xdc] for cell 'azimuth_0/sin_cos'
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'azimuth_0/div'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/div_gen_0/div_gen_0/div_gen_0_in_context.xdc] for cell 'azimuth_0/div'
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/cordic_1/cordic_1/cordic_1_in_context.xdc] for cell 'azimuth_0/ArcTan'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/cordic_1/cordic_1/cordic_1_in_context.xdc] for cell 'azimuth_0/ArcTan'
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/cordic_sqrt/cordic_sqrt/cordic_sqrt_in_context.xdc] for cell 'azimuth_0/sqrt'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/cordic_sqrt/cordic_sqrt/cordic_sqrt_in_context.xdc] for cell 'azimuth_0/sqrt'
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'azimuth_0/mult_10bit'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/mult_gen_0/mult_gen_0/mult_gen_0_in_context.xdc] for cell 'azimuth_0/mult_10bit'
+Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'azimuth_0/mult_2_bir'
+Finished Parsing XDC File [d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/mult_gen_1/mult_gen_1/mult_gen_1_in_context.xdc] for cell 'azimuth_0/mult_2_bir'
+Parsing XDC File [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/constrs_1/new/const1.xdc]
+WARNING: [Constraints 18-619] A clock with name 'clk' already exists, overwriting the previous clock with the same name. [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/constrs_1/new/const1.xdc:1]
+Finished Parsing XDC File [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/constrs_1/new/const1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/constrs_1/new/const1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_module_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_module_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 923.688 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.688 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 923.688 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 923.688 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'azimuth_0/ArcTan' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'azimuth_0/div' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'azimuth_0/mult_10bit' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'azimuth_0/mult_2_bir' at clock pin 'CLK' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'azimuth_0/sin_cos' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '1000.000' specified during out-of-context synthesis of instance 'azimuth_0/sqrt' at clock pin 'aclk' is different from the actual clock period '5.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 923.688 ; gain = 554.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg484-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 923.688 ; gain = 554.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  {d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  {d:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc}, line 5).
+Applied set_property DONT_TOUCH = true for clk_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for azimuth_0/sin_cos. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for azimuth_0/div. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for azimuth_0/ArcTan. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for azimuth_0/sqrt. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for azimuth_0/mult_10bit. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for azimuth_0/mult_2_bir. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:29 . Memory (MB): peak = 923.688 ; gain = 554.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'Bmult_1_reg[19:0]' into 'Amult_1_reg[19:0]' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:205]
+INFO: [Synth 8-4471] merging register 's_axis_dividend_tvalid_reg' into 's_axis_divisor_tvalid_reg' [D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.srcs/sources_1/new/Azimuth.vhd:167]
+INFO: [Synth 8-5544] ROM "s_axis_phase_tvalid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_divisor_tvalid" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_dividend_tdata" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "s_axis_cartesian_tvalid_sqrt" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:29 . Memory (MB): peak = 923.688 ; gain = 554.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Azimuth 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     40 Bit       Adders := 1     
+	   2 Input     20 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 1     
+	               20 Bit    Registers := 3     
+	               16 Bit    Registers := 3     
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 9     
+	                9 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 10    
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 31    
+	   3 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "azimuth_0/s_axis_dividend_tdata" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_dividend_tdata_reg[10]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_dividend_tdata_reg[11]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_dividend_tdata_reg[12]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_dividend_tdata_reg[13]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_dividend_tdata_reg[14]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_dividend_tdata_reg[15]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_divisor_tdata_reg[10]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_divisor_tdata_reg[11]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_divisor_tdata_reg[12]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_divisor_tdata_reg[13]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_divisor_tdata_reg[14]' (FDRE) to 'azimuth_0/s_axis_divisor_tdata_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\azimuth_0/s_axis_divisor_tdata_reg[15] )
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[10]' (FDE) to 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[11]' (FDE) to 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[12]' (FDE) to 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[13]' (FDE) to 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[15]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[14]' (FDE) to 'azimuth_0/s_axis_cartesian_tdata_sqrt_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\azimuth_0/s_axis_cartesian_tdata_sqrt_reg[15] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\azimuth_0/s_axis_cartesian_tvalid_sqrt_reg )
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[10]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[11]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[12]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[13]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[14]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\azimuth_0/s_axis_cartesian_tdata_reg[15] )
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[26]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[27]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[28]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[29]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'azimuth_0/s_axis_cartesian_tdata_reg[30]' (FDRE) to 'azimuth_0/s_axis_cartesian_tdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\azimuth_0/s_axis_cartesian_tdata_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 923.688 ; gain = 554.527
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_0/clk_out1' to pin 'clk_0/bbstub_clk_out1/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'clk_0/clk_out2' to pin 'clk_0/bbstub_clk_out2/O'
+WARNING: [Synth 8-565] redefining clock 'clk'
+INFO: [Synth 8-5819] Moved 2 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 923.688 ; gain = 554.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:41 . Memory (MB): peak = 927.477 ; gain = 558.316
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:00:42 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |cordic_0      |         1|
+|3     |div_gen_0     |         1|
+|4     |cordic_1      |         1|
+|5     |cordic_sqrt   |         1|
+|6     |mult_gen_0    |         1|
+|7     |mult_gen_1    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |clk_wiz_0_bbox_0   |     1|
+|2     |cordic_0_bbox_1    |     1|
+|3     |cordic_1_bbox_3    |     1|
+|4     |cordic_sqrt_bbox_4 |     1|
+|5     |div_gen_0_bbox_2   |     1|
+|6     |mult_gen_0_bbox_5  |     1|
+|7     |mult_gen_1_bbox_6  |     1|
+|8     |CARRY4             |    18|
+|9     |LUT1               |    60|
+|10    |LUT2               |    15|
+|11    |LUT3               |    14|
+|12    |LUT4               |    10|
+|13    |LUT5               |    10|
+|14    |LUT6               |    37|
+|15    |FDRE               |   231|
+|16    |FDSE               |     1|
+|17    |IBUF               |    21|
+|18    |OBUF               |    22|
++------+-------------------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |   602|
+|2     |  azimuth_0 |Azimuth |   556|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 928.242 ; gain = 163.461
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:43 . Memory (MB): peak = 928.242 ; gain = 559.082
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 936.238 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:47 . Memory (MB): peak = 936.238 ; gain = 578.547
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 936.238 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'D:/Projects/probation training/cordic_Azimuth/cordic_Azimuth.runs/synth_1/Top_module.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_module_utilization_synth.rpt -pb Top_module_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Aug 18 23:43:15 2019...

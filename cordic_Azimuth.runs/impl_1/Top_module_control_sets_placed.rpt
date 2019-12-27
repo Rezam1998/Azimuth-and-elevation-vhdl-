@@ -1,0 +1,86 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Sun Aug 18 23:46:53 2019
+| Host         : Reza running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_module_control_sets_placed.rpt
+| Design       : Top_module
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    18 |
+| Unused register locations in slices containing registers |    86 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            1 |
+|      4 |            2 |
+|      9 |            2 |
+|     10 |            5 |
+|    16+ |            8 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             916 |          277 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |             229 |           70 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               9 |            4 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+---------------------------------------------------------------------------------------------+----------------------------+------------------+----------------+
+|  Clock Signal  |                                        Enable Signal                                        |      Set/Reset Signal      | Slice Load Count | Bel Load Count |
++----------------+---------------------------------------------------------------------------------------------+----------------------------+------------------+----------------+
+|  clk_IBUF_BUFG | azimuth_0/out_flag01_out                                                                    | azimuth_0/out_flag0        |                1 |              1 |
+|  clk_IBUF_BUFG | azimuth_0/state0                                                                            | azimuth_0/state[3]_i_1_n_0 |                2 |              4 |
+|  clk_IBUF_BUFG | azimuth_0/counter0                                                                          | azimuth_0/out_flag0        |                1 |              4 |
+|  clk_IBUF_BUFG | azimuth_0/arg_20                                                                            |                            |                2 |              9 |
+|  clk_IBUF_BUFG | azimuth_0/sqrt/U0/i_synth/i_synth/gen_sqrt.square_root/gen_rdy_int/rdy_int                  |                            |                4 |              9 |
+|  clk_IBUF_BUFG | azimuth_0/sin_G0                                                                            |                            |                5 |             10 |
+|  clk_IBUF_BUFG | azimuth_0/s_axis_cartesian_tdata_sqrt[9]_i_1_n_0                                            |                            |                4 |             10 |
+|  clk_IBUF_BUFG | azimuth_0/s_axis_phase_tvalid0                                                              |                            |                2 |             10 |
+|  clk_IBUF_BUFG | azimuth_0/state[3]_i_1_n_0                                                                  |                            |                4 |             10 |
+|  clk_IBUF_BUFG | azimuth_0/ArcTan/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr  |                            |                2 |             10 |
+|  clk_IBUF_BUFG | azimuth_0/sin_L0                                                                            |                            |                8 |             20 |
+|  clk_IBUF_BUFG | azimuth_0/s_axis_cartesian_tdata0                                                           |                            |                6 |             20 |
+|  clk_IBUF_BUFG | azimuth_0/s_axis_divisor_tdata[9]_i_1_n_0                                                   |                            |                5 |             20 |
+|  clk_IBUF_BUFG | azimuth_0/sin_cos/U0/i_synth/i_synth/gen_cordic.output_stage/gen_rotation.gen_rdy_cr/rdy_cr |                            |                4 |             20 |
+|  clk_IBUF_BUFG | azimuth_0/A0__0                                                                             |                            |                7 |             21 |
+|  clk_IBUF_BUFG | azimuth_0/arg_00                                                                            |                            |                7 |             30 |
+|  clk_IBUF_BUFG | azimuth_0/tan_G0                                                                            |                            |               10 |             30 |
+|  clk_IBUF_BUFG |                                                                                             |                            |              277 |            948 |
++----------------+---------------------------------------------------------------------------------------------+----------------------------+------------------+----------------+
+
+
